@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe K-NN</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Tic-Tac-Toe K-NN</h1>
+    </head>
+
+    <main class="game">
+        <div class="game-board">
+            <div class="game-cell" onclick="makeMove(0, 0)"></div>
+            <div class="game-cell vert" onclick="makeMove(0, 1)"></div>
+            <div class="game-cell" onclick="makeMove(0, 2)"></div>
+            <div class="game-cell hori" onclick="makeMove(1, 0)"></div>
+            <div class="game-cell hori vert" onclick="makeMove(1, 1)"></div>
+            <div class="game-cell hori" onclick="makeMove(1, 2)"></div>
+            <div class="game-cell" onclick="makeMove(2, 0)"></div>
+            <div class="game-cell vert" onclick="makeMove(2, 1)"></div>
+            <div class="game-cell" onclick="makeMove(2, 2)"></div>
+        </div>
+
+        <div class="game-details" id="game-details"></div>
+    </main>
+
+    <footer>
+        <button onclick="clearPredicts()">Limpar Testes</button>
+        <button onclick="predictWinner()">Prever Vencedor</button>
+        <button onclick="resetBoard()">Resetar Jogo</button>
+        <a href="./"><button>Retornar ao inicio</button></a>
+    </footer>
+
+    <div>
+        <h1>Ultimos testes</h1>
+
+        <div class="'ultimos-testes" id="lastsPredicts"></div>
+    </div>
+
+    <script src="KNNClassifier_Class.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

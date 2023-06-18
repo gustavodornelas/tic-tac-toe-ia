@@ -1,0 +1,109 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    text-align: justify;
+    max-width: 60%;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.graphics {
+    max-height: 300px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+
+    padding: 1rem;
+    background-color: #eee;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 4px #ddd;
+
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.game-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: solid 3px transparent;
+}
+
+.vert {
+    border-left: 3px solid black ;
+    border-right: 3px solid black;
+}
+
+.hori {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.game-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 32px;
+    height: 200px;
+}
+
+footer {
+    margin-top: 1rem;
+    display: flex;
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #eee;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 4px #ddd;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}

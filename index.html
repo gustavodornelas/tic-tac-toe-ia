@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe K-NN</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Tic-Tac-Toe K-NN</h1>
+    </head>
+
+    <main>
+        <h2>Base de dados escolhida: Tic-Tac-Toe Endgame Data Set</h2>
+        <img src="src/img/icon.jpg" alt="" srcset=""> <br>
+
+        <h3>Informações da base de dados</h3>
+
+        <article>
+            Este banco de dados codifica o conjunto completo de possíveis configurações de tabuleiro no final dos jogos
+            da
+            velha, onde se supõe que "x" tenha jogado primeiro. O conceito-alvo é "vitória ou empate para x" (ou seja,
+            verdadeiro
+            quando "x" tem uma das 8 maneiras possíveis de criar um "três em linha ou empate o jogo com O").
+        </article>
+        <h3>Informações do atributo</h3>
+
+        <ol>
+            <li>quadrado superior esquerdo: {x,o,b}</li>
+            <li>quadrado superior central: {x,o,b}</li>
+            <li>quadrado superior direito: {x,o,b}</li>
+            <li>quadrado central esquerdo: {x,o,b}</li>
+            <li>meio-meio-quadrado: {x,o,b}</li>
+            <li>quadrado central direito: {x,o,b}</li>
+            <li>quadrado inferior esquerdo: {x,o,b}</li>
+            <li>quadrado inferior-meio: {x,o,b}</li>
+            <li>quadrado inferior direito: {x,o,b}</li>
+            <li>Classe: {positivo, negativo}</li>
+        </ol>
+
+        Fonte: <a href="https://archive.ics.uci.edu/ml/datasets/Tic-Tac-Toe+Endgame">
+            https://archive.ics.uci.edu/ml/datasets/Tic-Tac-Toe+Endgame </a>
+
+
+        <h2>justicativa da escolha da base de dados</h2>
+
+        O motivo inicial da escolha da base de dados, foi a mesma ser um jogo que apesar de parecer simples, tem uma
+        gama de possibilidades muito alem do imaginado,
+        com 9 atributos que podem ser preenchidos com [X], [O] ou ficar em branco [B], se tem uma quantidade de 958
+        possibilidades diferentes. <br>
+
+        <br>
+        <img src="src/img/knime.jpeg" alt="" srcset="">
+        <br>
+        <img src="src/img/histograma.jpeg" class="graphics" alt="" srcset="">
+        <img src="src/img/pie-chart.jpeg" class="graphics" alt="" srcset="">
+        <br>
+
+
+        <h2>Melhor algoritmo de treinamento: K-Nearest Neighbors (KNN)</h2>
+
+        Apos analises foi verificado que o melhor algoritmo para treinamento da IA foi o K-Nearest Neighbors, conforme
+        descrito abaixo:
+
+        <ul>
+            <li>Classificação correta: 808</li>
+            <li>Classificado errado: 149</li>
+            <li>Precisão: 84.431%</li>
+            <li>Erro: 15.569%</li>
+            <li>coeficiente kappa de Cohen (k): 0,623%</li>
+        </ul>
+    </main>
+
+    <footer>
+        <a href="game.html"><button>Iniciar Jogo</button></a>
+
+    </footer>
+
+</body>
+
+</html>
